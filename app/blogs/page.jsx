@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import Loading from "./loading";
+import Link from "next/link";
 
 async function getData() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -18,6 +19,7 @@ export default async function Blogs() {
   const data = await getData();
   console.log(data);
 
+
   return (
     <main>
       <h1>Blogs</h1>
@@ -32,7 +34,7 @@ export default async function Blogs() {
                       <span className="ml-3 text-white font-bold">
                         {_data.id} .
                       </span>
-                      {_data?.title}
+                      <Link href="/blog/id">{_data?.title}</Link>
                     </li>
                   </div>
                 </>
