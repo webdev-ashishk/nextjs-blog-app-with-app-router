@@ -26,10 +26,10 @@ async function GetPost({ params }) {
   return (
     <main>
       <ul>
+        <div className="text-5xl text-purple-800 font-bold mr-10 mt-10 bg-white rounded-full p-5 text-center">
+          {post.id}
+        </div>
         <li className="text-red-500 text-4xl font-bold ml-10 mt-10">
-          <span className="text-5xl text-purple-800 font-bold mr-10 mt-10 bg-white rounded-full p-5">
-            {post.id}
-          </span>
           {post.title}
         </li>
         <li className="text-3xl bg-green-200 text-black font-bold rounded-lg ml-10 mr-10 p-10 mt-10">
