@@ -27,7 +27,7 @@ export default async function Products() {
                 <>
                   <div
                     key="product.brand"
-                    className="w-[380px] border-2 m-4 rounded-lg text-center cursor-pointer hover:border-red-200"
+                    className="w-[380px] border-2 m-4 rounded-lg text-center cursor-pointer hover:border-purple-500"
                   >
                     <Image
                       src={product?.images[0]}
