@@ -1,14 +1,13 @@
+import One from "@/components/one";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
-      <Link
-        href="/blogs"
-        className="text-purple-500 text-8xl font-bold cursor-pointer hover:text-indigo-600"
-      >
-        Blog
-      </Link>
-    </div>
+    <>
+      <div className="grid place-content-center h-screen">
+        <h1 className="text-5xl font-bold">Welcome to Awesome Place !</h1>
+        <One></One>
+      </div>
+    </>
   );
 }

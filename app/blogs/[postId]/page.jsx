@@ -4,14 +4,15 @@
 // }
 
 // Return a list of `params` to populate the [slug] dynamic segment
-// This code runs at build time
+//--------- This code runs at build time--------
+
 // export async function generateStaticParams() {
 //   const posts = await fetch("https://jsonplaceholder.typicode.com/posts").then(
 //     (res) => res.json()
 //   );
 
 //   return posts.map((post) => ({
-//     postID: post.postID,
+//     postId: post.postId,
 //   }));
 // }
 
