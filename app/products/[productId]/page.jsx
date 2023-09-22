@@ -7,10 +7,10 @@ export default async function ProductDetailPage({ params }) {
     <div className="grid place-content-center">
       <div className=" border-2 w-[400px] rounded-lg hover:border-5 border-red-400">
         <Image
-          src={singleProduct.thumbnail}
+          src={singleProduct.images[0]}
           alt="thumbnails"
           width={400}
-          height={400}
+          height={200}
         ></Image>
         <h1 className="mb-4 font-bold text-2xl ml-3">{singleProduct.title}</h1>
         <ul className="ml-3">

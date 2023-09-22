@@ -32,7 +32,7 @@ export default async function Products() {
                       className="w-[380px] border-2 m-4 rounded-lg text-center cursor-pointer hover:border-purple-500"
                     >
                       <Image
-                        src={product?.images[0]}
+                        src={product?.thumbnail}
                         alt="Produt-image"
                         width={300}
                         height={300}
@@ -41,7 +41,7 @@ export default async function Products() {
                         {product?.title}
                       </h1>
                       <ul>
-                        <li>{product.description}</li>
+                        {/* <li>{product.description}</li> */}
                         <span className="text-yellow-400">
                           rating-{product.rating}
                         </span>
