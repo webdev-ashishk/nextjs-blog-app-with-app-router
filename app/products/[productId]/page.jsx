@@ -39,9 +39,7 @@ export default async function ProductDetailPage({ params }) {
           <li className="mt-2 text-2xl font-bold">
             PRICE-{singleProduct.price} $
           </li>
-          <li className="hover:text-purple-600">
-            DISCOUNT-{singleProduct.discountPercentage}%
-          </li>
+          <li>DISCOUNT-{singleProduct.discountPercentage}%</li>
           <li>RATTING-{singleProduct.rating}</li>
           <li>STOCK-{singleProduct.stock}</li>
           <li className="mb-2">BRAND-{singleProduct.brand}</li>
