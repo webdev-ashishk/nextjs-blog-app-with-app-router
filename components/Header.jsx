@@ -8,8 +8,7 @@ const Header = () => {
         <li>
           <Link
             href="/"
-            className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-red-800
-              font-bold text-2xl"
+            className="text-white  focus:ring-2 rounded-lg px-5 py-2.5 mr-2 mb-2 first-letter:focus:outline-none dark:focus:bg-purple-800 font-bold text-2xl"
           >
             HOME
           </Link>
@@ -17,8 +16,7 @@ const Header = () => {
         <li>
           <Link
             href="/blogs"
-            className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-red-800
-              font-bold text-2xl"
+            className="text-white  focus:ring-2 rounded-lg px-5 py-2.5 mr-2 mb-2 first-letter:focus:outline-none dark:focus:bg-purple-800 font-bold text-2xl"
           >
             BLOGS
           </Link>
@@ -26,8 +24,7 @@ const Header = () => {
         <li>
           <Link
             href="/products"
-            className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-red-800
-              font-bold text-2xl"
+            className="text-white  focus:ring-2 rounded-lg px-5 py-2.5 mr-2 mb-2 first-letter:focus:outline-none dark:focus:bg-purple-800 font-bold text-2xl"
           >
             PRODUCTS
           </Link>
