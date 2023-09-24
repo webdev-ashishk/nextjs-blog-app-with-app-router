@@ -17,9 +17,24 @@ export default async function Products() {
   const data = await getData();
   console.log(data);
   const { products } = data;
+  function priceLessThan500(products) {
+    products.filter((product) => {
+      return product.price < 500;
+    });
+  }
   return (
     <main>
-      <h1>Product-page-rendered!!</h1>
+      <div>
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-5 ml-10"
+          onClick={priceLessThan500}
+        >
+          Price-Less-than-500$
+        </button>
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          Price-greate-than-500$
+        </button>
+      </div>
       <Suspense fallback={<Loading />}>
         <div className="flex flex-wrap justify-center">
           {products &&
