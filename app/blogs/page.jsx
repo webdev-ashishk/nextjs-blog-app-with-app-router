@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { Suspense } from "react";
 import Loading from "./loading";
-import Link from "next/link";
 
 async function getData() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -18,7 +18,14 @@ export default async function Blogs() {
 
   return (
     <main>
-      <h1>Blogs</h1>
+      <div className="border-2 mx-10 flex lg:flex-row lg:border-none md:flex-col sm:flex-col xs:flex-col xs:bg-green-300 rounded-2xl">
+        <button className=" border-red-500 hover:border-purple-500 hover:bg-blue-900 bg-blue-800 p-3 rounded-lg font-bold  text-2xl mx-3 md:my-2 sm:my-2 text-red-500 my-2 ">
+          string-length-more-than-20
+        </button>
+        <button className="hover:border-purple-500 hover:bg-blue-900 bg-blue-800 p-3 rounded-lg font-bold  text-2xl mx-3 md:my-2 sm:my-2 text-red-500 my-2">
+          string-length-less-than-20
+        </button>
+      </div>
       <Suspense fallback={<Loading />}>
         <ul>
           {data &&

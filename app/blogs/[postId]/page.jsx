@@ -12,7 +12,7 @@ async function GetPost({ params }) {
         <div className="border-2 rounded-lg">
           <li className="text-purple-500 text-4xl font-bold ml-10 mt-10">
             <span className="text-5xl text-purple-800 font-bold p-8">
-              {post.id}]
+              {post.id}
             </span>
             {post.title}
           </li>
